@@ -1,5 +1,19 @@
-.cards{
-    width: 250px;
-    background-color: aqua;
-    height: 250px;
+.cards {
+  width: 250px;
+  background-color: aqua;
+  height: 250px;
+}
+
+.divInput {
+  margin-bottom: 20px;
+  margin-left: 15px;
+}
+
+.divInput > label {
+  display: block;
+}
+
+.divInput > button {
+  margin-top: 10px;
+  display: block;
 }

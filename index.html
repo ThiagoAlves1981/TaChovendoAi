@@ -15,6 +15,7 @@
       crossorigin="anonymous"
     ></script>
     <script src="js/apiWeather.js" defer type="module"></script>
+    <script src="js/apiGeoLocate.js" defer type="module"></script>
     <link rel="stylesheet" href="/css/main.css">
     <title>Tá chovendo ai?</title>
   </head>
@@ -34,7 +35,17 @@
       </div>
     </nav>
     <h1>Seu melhor site de clima</h1>
-    <p>Digite abaixo a sua latitude e longitude:</p>
+    <p>Digite abaixo a sua localizacao:</p>
+    <div class="divInput">
+      <label for="City">Cidade</label>
+      <input type="text" name="City" id="city">
+    </div>
+    <div class="divInput">
+      <label for="State">Estado/Provincia</label>
+      <input type="text" name="State" id="state">
+      <button type="submit" id="submit"> Enviar</button>
+    </div>
+   
 
     <div id="weatherShow" class="cards">
       <h2>Clima da sua localização:</h2>

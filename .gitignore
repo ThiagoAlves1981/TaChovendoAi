@@ -1,4 +1,6 @@
 .env
 node_modules/
+js/apiGeoLocate_key.js
+js/apiWeather_key.js
 js/apiWeather_key.js
 js/apiGeoLocate_key.js

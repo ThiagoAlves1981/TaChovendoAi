@@ -1,9 +1,9 @@
-import { apiKey } from "./apiWeather_key.js";
+import { apiWeatherKey } from "./apiWeather_key.js";
 
-async function loadApiService() {
+export async function loadApiService(lat, lon) {
   try {
     const response = await fetch(
-      `https://api.openweathermap.org/data/2.5/weather?lat=-19.7478&lon=-47.9319&appid=${apiKey}&units=metric`,
+      `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiWeatherKey}&units=metric&lang=pt_br`,
     );
 
     const dataApi = await response.json();
@@ -11,11 +11,8 @@ async function loadApiService() {
 
     console.log(dataApi);
 
-    weatherCard.innerText = `Cidade: ${dataApi.name}
-    Temperatura: ${dataApi.main.temp}°C`;
+    return dataApi;
   } catch {
     (error) => console.error(error);
   }
 }
-
-loadApiService();

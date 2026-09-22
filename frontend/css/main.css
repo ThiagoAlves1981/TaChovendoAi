@@ -1,0 +1,76 @@
+.weather-cards {
+  padding: 15px;
+  width: 300px;
+  background-color: aliceblue;
+  height: auto;
+  font-display: justify;
+  line-height: 30px;
+  border-radius: 15px;
+}
+
+.text-cards {
+  width: 500px;
+  background-color: #eceed9;
+  padding: 15px;
+  border-radius: 10px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.small-text-cards {
+  display: flex;
+  justify-content: center;
+  background-color: #aec9ecf9;
+  border-radius: 10px;
+}
+
+.divInput {
+  margin-bottom: 20px;
+  margin-left: 15px;
+}
+
+.divInput > label {
+  display: block;
+}
+
+.divInput > button {
+  margin-top: 10px;
+  display: block;
+}
+
+#divPaiTextCard {
+  display: flex;
+  justify-content: center; /*horizontal*/
+}
+
+#weatherShowContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+#weatherShowMarineContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+#weatherShowFitContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+#infoRow {
+  margin-top: 10px;
+}
+
+main {
+  /*display: flex;
+  
+  align-items: center;vertical*/
+  padding: 10px;
+  margin: auto;
+  width: 90vw;
+  height: auto;
+  background-color: #bad7fcdc;
+}

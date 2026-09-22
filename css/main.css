@@ -40,7 +40,7 @@
 
 #divPaiTextCard {
   display: flex;
-  justify-content: center; /*horizontal*/
+  justify-content: center;
 }
 
 #weatherShowContainer {
@@ -64,13 +64,85 @@
   margin-top: 10px;
 }
 
+#principalTitle {
+  font-size: 25px;
+  color: #0b67ef;
+  font-weight: bold;
+  margin-right: 20px;
+  margin-bottom: 0px;
+  margin-left: 7px;
+}
+
+#about {
+  background-color: #f8f9fa;
+}
+
+.about-card {
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+  border-radius: 12px;
+}
+
+.about-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1) !important;
+}
+
+.icon-box {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  color: #2b3445;
+  background-color: #e0ecf6
+}
+
+.divInput input:focus {
+  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.15) !important;
+  background-color: #ffffff !important;
+  border: 1px solid #0d6efd !important;
+}
+
+#submit {
+  transition: all 0.2s ease-in-out;
+}
+
+#submit:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 15px rgba(13, 110, 253, 0.2) !important;
+}
+
+.weather-cards {
+  min-height: 150px;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.weather-cards:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08) !important;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
 main {
-  /*display: flex;
-  
-  align-items: center;vertical*/
   padding: 10px;
   margin: auto;
   width: 90vw;
   height: auto;
-  background-color: #bad7fcdc;
+}
+
+nav {
+  border-bottom: black 10px 10px;
 }

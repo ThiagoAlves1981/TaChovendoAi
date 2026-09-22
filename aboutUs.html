@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/main.js" defer type="module"></script>
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Tá chovendo ai?</title>
+  </head>
+
+  <body>
+     <nav class="navbar bg-white shadow-sm py-3">
+      <div class="container-fluid container">
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/11947/11947110.png"
+          alt="Logo"
+          width="30"
+          height="24"
+          class="d-inline-block align-text-top"
+        />
+        <a href="index.html">
+          <p id="principalTitle">Ta chovendo ai?</p>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="aboutUs.html">Sobre o Projeto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section id="about" class="py-5">
+      <div class="container">
+        <div class="text-center mb-5">
+          <span
+            class="badge bg-primary text-wrap px-3 py-2 rounded-pill fs-6 mb-2"
+            >Conheça o Projeto</span
+          >
+          <h2 class="display-5 fw-bold text-dark">Sobre o Tá Chovendo Aí?</h2>
+          <p class="lead text-muted mx-auto" style="max-width: 700px">
+            Uma solução moderna de consulta meteorológica em tempo real, focada
+            em performance, design responsivo e segurança de dados.
+          </p>
+        </div>
+
+        <div class="row g-4 mb-5">
+          <div class="col-md-4">
+            <div class="card h-100 border-0 shadow-sm about-card p-3">
+              <div class="card-body">
+                <div class="icon-box bg-primary text-white mb-3 rounded-3">
+                  <i class="bi bi-lightbulb-fill fs-3"></i>
+                </div>
+                <h4 class="card-title fw-bold mb-3">A Ideia</h4>
+                <p class="card-text text-secondary">
+                  Transformar a consulta meteorológica em uma experiência
+                  simples e rápida. Acompanhe a previsão de qualquer cidade com
+                  dados precisos e atualizados instantaneamente.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card h-100 border-0 shadow-sm about-card p-3">
+              <div class="card-body">
+                <div class="icon-box bg-success text-white mb-3 rounded-3">
+                  <i class="bi bi-shield-lock-fill fs-3"></i>
+                </div>
+                <h4 class="card-title fw-bold mb-3">Segurança & Proxy</h4>
+                <p class="card-text text-secondary">
+                  Utiliza uma arquitetura <strong>Client-Server</strong> com um
+                  backend Node.js atuando como Proxy. Isso garante que as chaves
+                  de API permaneçam 100% protegidas e ocultas no servidor.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card h-100 border-0 shadow-sm about-card p-3">
+              <div class="card-body">
+                <div class="icon-box bg-info text-white mb-3 rounded-3">
+                  <i class="bi bi-cpu-fill fs-3"></i>
+                </div>
+                <h4 class="card-title fw-bold mb-3">Deploy & CI/CD</h4>
+                <p class="card-text text-secondary">
+                  Hospedado no GitHub Pages com pipeline de deploy automático
+                  via <strong>GitHub Actions</strong> e backend dinâmico rodando
+                  em nuvem no Render.com.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-light p-4 rounded-4 text-center border">
+          <h5 class="fw-bold mb-3 text-secondary">Tecnologias Utilizadas</h5>
+          <div class="d-flex flex-wrap justify-content-center gap-2">
+            <span class="badge bg-dark-subtle text-dark border px-3 py-2 fs-6"
+              >HTML5 & CSS3</span
+            >
+            <span class="badge bg-dark-subtle text-dark border px-3 py-2 fs-6"
+              >Bootstrap 5</span
+            >
+            <span class="badge bg-dark-subtle text-dark border px-3 py-2 fs-6"
+              >JavaScript (ES6+)</span
+            >
+            <span class="badge bg-dark-subtle text-dark border px-3 py-2 fs-6"
+              >Node.js & Express</span
+            >
+            <span class="badge bg-dark-subtle text-dark border px-3 py-2 fs-6"
+              >API Proxy</span
+            >
+            <span class="badge bg-dark-subtle text-dark border px-3 py-2 fs-6"
+              >GitHub Actions</span
+            >
+            <span class="badge bg-dark-subtle text-dark border px-3 py-2 fs-6"
+              >Render.com</span
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

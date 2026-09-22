@@ -20,54 +20,124 @@
   </head>
 
   <body>
-    <nav class="navbar bg-body-tertiary">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-          <img
-            src="https://cdn-icons-png.flaticon.com/512/11947/11947110.png"
-            alt="Logo"
-            width="30"
-            height="24"
-            class="d-inline-block align-text-top"
-          />
-          Ta chovendo ai?
+     <nav class="navbar bg-white shadow-sm py-3">
+      <div class="container-fluid container">
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/11947/11947110.png"
+          alt="Logo"
+          width="30"
+          height="24"
+          class="d-inline-block align-text-top"
+        />
+        <a href="index.html">
+          <p id="principalTitle">Ta chovendo ai?</p>
         </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="aboutUs.html">Sobre o Projeto</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
 
-    <main>
+    <main class="py-5">
       <div class="container">
-        <div class="row" id="divPaiTextCard">
-          <div class="text-cards">
-            <h1>Seu melhor site de clima</h1>
-            <p>Digite abaixo a sua localizacao:</p>
-            <div class="divInput">
-              <label for="City">Cidade</label>
-              <input type="text" name="City" id="city" />
+        <div class="row justify-content-center" id="divPaiTextCard">
+          <div
+            class="col-lg-6 col-md-8 text-cards card border-0 shadow-sm p-4 p-md-5 rounded-4 bg-white"
+          >
+            <h1 class="h3 fw-bold text-dark text-center mb-2">
+              Seu melhor site de clima
+            </h1>
+            <p class="text-muted text-center mb-4">
+              Digite abaixo a sua localizacao:
+            </p>
+
+            <div class="divInput mb-3">
+              <label for="City" class="form-label fw-medium text-secondary"
+                >Cidade</label
+              >
+              <input
+                type="text"
+                name="City"
+                id="city"
+                class="form-control form-control-lg bg-light border-0"
+                placeholder="Ex: Uberaba"
+              />
             </div>
-            <div class="divInput">
-              <label for="State">Estado/Provincia</label>
-              <input type="text" name="State" id="state" />
-              <button type="submit" id="submit">Enviar</button>
+
+            <div class="divInput mb-4">
+              <label for="State" class="form-label fw-medium text-secondary"
+                >Estado/Província</label
+              >
+              <input
+                type="text"
+                name="State"
+                id="state"
+                class="form-control form-control-lg bg-light border-0 mb-4"
+                placeholder="Ex: MG"
+              />
+              <button
+                type="submit"
+                id="submit"
+                class="btn btn-primary btn-lg w-100 fw-bold shadow-sm"
+              >
+                Enviar
+              </button>
             </div>
           </div>
         </div>
-        <div class="row">
-          <div class="small-text-cards">
-            <h2>Clima da sua localização:</h2>
+
+        <div class="row mt-5 mb-4">
+          <div class="small-text-cards text-center">
+            <h2 class="h4 fw-bold text-dark">Clima da sua localização:</h2>
           </div>
         </div>
-        <div class="row" id="infoRow">
+
+        <div class="row g-4 justify-content-center" id="infoRow">
           <div id="weatherShowContainer" class="col-xm-12 col-sm-6 col-md-4">
-            <div id="weatherCard" class="weather-cards"></div>
+            <div
+              id="weatherCard"
+              class="weather-cards card h-100 border-0 shadow-sm p-4 rounded-4 bg-white"
+            ></div>
           </div>
 
-          <div id="weatherShowMarineContainer" class="col-xm-12 col-sm-6 col-md-4">
-            <div id="weatherCardMarine" class="weather-cards"></div>
+          <div
+            id="weatherShowMarineContainer"
+            class="col-xm-12 col-sm-6 col-md-4"
+          >
+            <div
+              id="weatherCardMarine"
+              class="weather-cards card h-100 border-0 shadow-sm p-4 rounded-4 bg-white"
+            ></div>
           </div>
 
-          <div id="weatherShowFitContainer" class="col-xm-12 col-sm-12 col-md-4">
-            <div id="weatherCardFitness" class="weather-cards"></div>
+          <div
+            id="weatherShowFitContainer"
+            class="col-xm-12 col-sm-12 col-md-4"
+          >
+            <div
+              id="weatherCardFitness"
+              class="weather-cards card h-100 border-0 shadow-sm p-4 rounded-4 bg-white"
+            ></div>
           </div>
         </div>
       </div>

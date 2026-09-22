@@ -33,7 +33,7 @@ btn_submit.addEventListener("click", async () => {
 
   weatherShowCard.innerHTML = `
   <strong>Cidade:</strong> ${data.name} </br>
-  <strong>Temperatura</strong>: ${data.main.temp.toPrecision(2)}°C</br>
+  <strong>Temperatura:</strong> ${data.main.temp.toPrecision(2)}°C</br>
   <strong>Umidade:</strong> ${data.main.humidity}%</br>
   
   

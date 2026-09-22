@@ -9,11 +9,12 @@ export async function fetchGeoLocateByCord(city, state) {
     }
 
     const dataMais = await response.json();
+    console.log("Retorno GeoLocate: ",dataMais);
 
     if (dataMais && dataMais.length > 0) {
       return {
         lat: dataMais[0].lat,
-        lon: dataMJais[0].lon,
+        lon: dataMais[0].lon,
       };
     } else {
       throw new Error("Nenhum resultado encontrado para esta cidade.");

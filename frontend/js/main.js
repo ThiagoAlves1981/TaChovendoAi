@@ -25,7 +25,7 @@ btn_submit.addEventListener("click", async () => {
     hour: "2-digit",
     minute: "2-digit",
   });
-  console.log("Sunrise: ", sunrise, "Sunset: ", sunset);
+  //console.log("Sunrise: ", sunrise, "Sunset: ", sunset);
 
   let weatherShowCard = document.getElementById("weatherCard");
   let weatherCardMarine = document.getElementById("weatherCardMarine");

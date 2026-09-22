@@ -9,11 +9,10 @@ export async function loadApiService(lat, lon) {
       throw new Error("Falha ao obter os dados do clima do servidor");
 
     const data = await response.json();
-    //const weatherCard = document.getElementById("weatherCard");
 
-    console.log(dataApi);
+    console.log("Retorno OpenWeather: ", data);
 
-    return dataApi;
+    return data;
   } catch (error) {
     console.error("Erro no apiWeather:", error);
     return null;

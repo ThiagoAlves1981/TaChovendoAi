@@ -7,7 +7,7 @@ export async function loadApiService(lat, lon) {
     );
 
     const dataApi = await response.json();
-    const weatherCard = document.getElementById("weatherCard");
+    //const weatherCard = document.getElementById("weatherCard");
 
     console.log(dataApi);
 

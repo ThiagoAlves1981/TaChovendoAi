@@ -15,9 +15,10 @@
       crossorigin="anonymous"
     ></script>
     <script src="js/main.js" defer type="module"></script>
-    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/main.css" />
     <title>Tá chovendo ai?</title>
   </head>
+
   <body>
     <nav class="navbar bg-body-tertiary">
       <div class="container-fluid">
@@ -33,29 +34,43 @@
         </a>
       </div>
     </nav>
-    
+
     <main>
-      <div class="text-cards">
-        <h1>Seu melhor site de clima</h1>
-        <p>Digite abaixo a sua localizacao:</p>
-        <div class="divInput">
-          <label for="City">Cidade</label>
-          <input type="text" name="City" id="city">
+      <div class="container">
+        <div class="row" id="divPaiTextCard">
+          <div class="text-cards">
+            <h1>Seu melhor site de clima</h1>
+            <p>Digite abaixo a sua localizacao:</p>
+            <div class="divInput">
+              <label for="City">Cidade</label>
+              <input type="text" name="City" id="city" />
+            </div>
+            <div class="divInput">
+              <label for="State">Estado/Provincia</label>
+              <input type="text" name="State" id="state" />
+              <button type="submit" id="submit">Enviar</button>
+            </div>
+          </div>
         </div>
-        <div class="divInput">
-          <label for="State">Estado/Provincia</label>
-          <input type="text" name="State" id="state">
-          <button type="submit" id="submit"> Enviar</button>
+        <div class="row">
+          <div class="small-text-cards">
+            <h2>Clima da sua localização:</h2>
+          </div>
         </div>
-      </div>
-      <h2>Clima da sua localização:</h2>
-      <div id="weatherShow" class="weather-cards">
-      
-      <div id="weatherCard" class="cards">
+        <div class="row" id="infoRow">
+          <div id="weatherShowContainer" class="col-xm-12 col-sm-6 col-md-4">
+            <div id="weatherCard" class="weather-cards"></div>
+          </div>
+
+          <div id="weatherShowMarineContainer" class="col-xm-12 col-sm-6 col-md-4">
+            <div id="weatherCardMarine" class="weather-cards"></div>
+          </div>
+
+          <div id="weatherShowFitContainer" class="col-xm-12 col-sm-12 col-md-4">
+            <div id="weatherCardFitness" class="weather-cards"></div>
+          </div>
+        </div>
       </div>
     </main>
-    
-
-    </div>
   </body>
 </html>
